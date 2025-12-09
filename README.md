@@ -1,0 +1,1 @@
+# mayeda_git_class
