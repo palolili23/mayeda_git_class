@@ -1,4 +1,5 @@
 library(tidyverse)
 
 ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = cyl))
+  geom_point(mapping = aes(x = displ, y = hwy)) +
+  geom_smooth(mapping = aes(x = displ, y = hwy))
