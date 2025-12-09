@@ -12,5 +12,6 @@ plot <- iris %>%
   geom_point()
 
 # run regression
-lm <- glm(Sepal.Length ~ Sepal.Width + factor(Species), data = iris)
+lm <- glm(Sepal.Length ~ Sepal.Width + Petal.Length + factor(Species), 
+          data = iris)
 summary(lm)
